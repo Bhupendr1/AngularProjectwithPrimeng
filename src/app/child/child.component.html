@@ -1,0 +1,9 @@
+
+<p-card header="Create Admins" [ngClass]="{boxRed:boxColor=='red',boxGreen:boxColor=='green'}">
+    <div class="flex flex-column gap-2">
+        <label htmlFor="username">Admin Name</label>
+        <input pInputText  #myinput id="username" aria-describedby="username-help" placeholder="{{placeholderText}}"/>
+        <small id="username-help">Enter your username to reset your password.</small>
+        <p-button label="Create" styleClass="p-button-raised p-button-success" (click)="onCreate(myinput)"></p-button>
+    </div>
+</p-card>
